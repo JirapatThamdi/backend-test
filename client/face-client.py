@@ -52,12 +52,12 @@ def base642image(base64str: str, use_opencv: bool = False):
 
 
 # Read the image file
-b64str = image2base64("client/test_image.png", use_opencv=True)
+# b64str = image2base64("client/test.png", use_opencv=True)
 
-url = "http://0.0.0.0:8000/detect_faces"
-params = {"image_base64": b64str}
-headers = {"accept": "application/json"}
+# url = "http://0.0.0.0:8000/detect_faces"
+# params = {"image_base64": b64str}
+# headers = {"accept": "application/json"}
 
-response = requests.post(url, params=params, headers=headers)
-image = base642image(response.json()["result"], use_opencv=True)
-cv2.imwrite("output/result.jpg", image)
+# response = requests.post(url, params=params, headers=headers)
+# image = base642image(response.json()["result"], use_opencv=True)
+# cv2.imwrite("output/result.jpg", image)

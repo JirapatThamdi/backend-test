@@ -2,7 +2,7 @@
 ```
 # Create Python environment
 python3 -m venv venv
-source venv/bin/active
+source venv/bin/activate
 
 # Install required packages
 pip install -r requirements.txt
@@ -21,3 +21,5 @@ python3 client/face-client.py
 
 # the result image will saved in output/result.jpg
 ```
+Time of use
+2+1+2+1+2+2+2+1+1+2+1+1+2+1 = 21 hours

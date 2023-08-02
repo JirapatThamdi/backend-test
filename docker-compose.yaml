@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  aibe-service:
+    working_dir: /face-detect-backend-service
+    build: .
+    restart: always
+
+    ports:
+      - "8000:8000"
+
+    environment:
+      MONGODB_URL: 'mongodb+srv://plam2544:RULiHPvYiDIFL3KE@cluster0.0x0qdjp.mongodb.net/'
+      
+    volumes:
+      - .:/face-detect-backend-service
+    entrypoint: python3 main.py
